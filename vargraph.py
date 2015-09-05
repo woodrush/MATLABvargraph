@@ -128,7 +128,6 @@ def searchvars():
 			elif expr["type"] == "globaldecl":
 				globalvars += expr["varlist"]
 				for tvar in expr["varlist"]:
-					addEdge(sourcefile,tvar,searchfile)
 					addEdge(graph,tvar)
 					addEdge(invgraph,tvar)
 			# Assignment
