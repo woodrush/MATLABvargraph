@@ -24,7 +24,7 @@ This tool has a very simple implementation and still has many limitations, since
 
 ## Usage
 1. Place all *.m files in the same directory as this file
-2. Call `vargraph.py -r <myvar>` from the terminal (multiple vars, maximum graph depths can be specified)
+2. Call `python vargraph.py -r <myvar>` from the terminal (multiple vars, maximum graph depths can be specified)
 
 The full usage is as follows:
 
@@ -65,6 +65,7 @@ The full usage is as follows:
 - Analyze the dependency of function arguments and its outputs
 - Analyze nested function declerations
 - Analyze class files and structs
+- Variables inside `if` statements should depend on the variables in the `if` condition
 
 ## References
 Example images were generated using "Newton-Raphson Loadflow" by PRAVI (2008), http://www.mathworks.com/matlabcentral/fileexchange/21059-newton-raphson-loadflow
