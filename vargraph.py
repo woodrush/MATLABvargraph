@@ -1,7 +1,6 @@
 # coding: UTF-8
 from sys import argv
 from utils import argparse, evalOrLoadPickle
-from parser import searchvars
 from termcolor import colored
 from os import listdir
 import re
